@@ -50,8 +50,20 @@ card.forEach(element => {
 
 });
 
-const row = document.getElementsByClassName(`row`);
-console.log(row);
+//ciclo for
+for (let i = 0; i < card.length; i++) {
+    const element = card[i];
+    console.log(card);
+
+}
+
+
+
+
+function displayImages() {
+    const cardContainer = document.getElementById('card-container');
+}
+
 
 
 
