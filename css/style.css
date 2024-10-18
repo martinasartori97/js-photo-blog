@@ -4,22 +4,24 @@
     box-sizing: border-box;
 }
 
+
+
 h1 {
     font-style: italic;
     text-align: center;
     background-image: url(../img/wall.png);
     height: 150px;
     padding: 2rem;
+    
+    
 
 }
 
 main {
     background-image: url(/img/cork.png);
     width: 100%;
-
-
-
 }
+
 
 .card-text {
     font-style: oblique;
@@ -34,9 +36,13 @@ main {
 
 }
 
+
+
 .card:hover {
     transform: rotate(7deg);
 }
+
+
 
 .pallino {
     position: absolute;
