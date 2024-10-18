@@ -5,11 +5,16 @@
 }
 
 h1 {
-    font-family: "Sometype Mono", monospace;
+    font-style: italic;
     text-align: center;
     background-image: url(../img/wall.png);
     height: 150px;
-    padding: top 10px;
-    font-size: 75px;
+    padding: 2rem;
 
+}
+
+.main {
+    background-image: url(../img/cork.png);
+    height: 100vh;
+    
 }
