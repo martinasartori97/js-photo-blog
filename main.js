@@ -78,20 +78,7 @@ function generateMarkup(text, url) {
                     </div>
                 </div>`
 }
-
-const container = document.getElementsByClassName('container');
-cardContainer.innerHTML = 'innerHTML'
-
-
-cardsData.forEach(card => {
-    cardContainer.innerHTML += generateMarkup(card.text, card.url);
-});
-
-
-
-
-
-
+console.log(card);
 
 //chiamata AJAX all’API di JSON Placeholder
 axios
