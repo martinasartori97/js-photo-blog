@@ -33,7 +33,8 @@ main {
     padding-right: 10px;
 
 }
-.card:hover{
+
+.card:hover {
     transform: rotate(7deg);
 }
 
@@ -45,5 +46,3 @@ main {
     width: 30px;
     height: auto;
 }
-
-
