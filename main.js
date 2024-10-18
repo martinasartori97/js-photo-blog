@@ -64,6 +64,31 @@ function displayImages() {
     const cardContainer = document.getElementById('card-container');
 }
 
+function generateMarkup(text, url) {
+    return `<div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
+                <div class="col">
+                    <div class="card h-100 ">
+
+                        <img src="https://cdn.pixabay.com/photo/2016/11/29/04/19/ocean-1867285_640.jpg"
+                            class="card-img-top" alt="...">
+                        <img class="pallino" src="img\pin.svg" alt="">
+                        <div class="card-body">
+                            <p class="card-text">accusamus beatae ad facilis cum similique qui sunt</p>
+                        </div>
+                    </div>
+                </div>`
+}
+
+const container = document.getElementsByClassName('container');
+cardContainer.innerHTML = 'innerHTML'
+
+
+cardsData.forEach(card => {
+    cardContainer.innerHTML += generateMarkup(card.text, card.url);
+});
+
+
+
 
 
 
@@ -74,6 +99,4 @@ axios
     .then((response) => {
         console.log(response.data)
     });
-
-
 
