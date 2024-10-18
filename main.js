@@ -50,10 +50,18 @@ card.forEach(element => {
 
 });
 
+const row = document.getElementsByClassName(`row`);
+console.log(row);
+
+
+
+
+//chiamata AJAX all’API di JSON Placeholder
 axios
-.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
-.then((response)=>{
-console.log(response.data)
-})
+    .get("https://jsonplaceholder.typicode.com/photos?_limit=6")
+    .then((response) => {
+        console.log(response.data)
+    });
+
 
 
