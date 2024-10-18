@@ -10,5 +10,6 @@ h1 {
     background-image: url(../img/wall.png);
     height: 150px;
     padding: top 10px;
+    font-size: 75px;
 
 }
