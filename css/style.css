@@ -13,10 +13,23 @@ h1 {
 
 }
 
-.main {
+main {
     background-image: url(/img/cork.png);
     width: 100%;
-    
+
 
 
 }
+
+.card-text {
+    font-style: oblique;
+}
+
+
+.card {
+    border-radius: 0;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
