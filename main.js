@@ -28,6 +28,5 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
 cardElement.addEventListener("click", function (e) {
     const overlayImg = document.getElementById("overlay-img")
 
-
 });
 
