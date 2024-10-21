@@ -19,7 +19,7 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
             </div>`;
 
             cardContainer.appendChild(cardElement);
-        })
+        });
     });
 
 
