@@ -44,25 +44,8 @@ const card = [
 console.log(card);
 
 
-//ciclo forEach
-card.forEach(element => {
-    console.log(element);
-
-});
-
-//ciclo for
-for (let i = 0; i < card.length; i++) {
-    const element = card[i];
-    console.log(card);
-
-}
 
 
-
-
-function displayImages() {
-    const cardContainer = document.getElementById('card-container');
-}
 
 function generateMarkup(text, url) {
     return `<div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
@@ -84,6 +67,13 @@ console.log(card);
 axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
     .then((response) => {
         console.log(response.data)
-        document.querySelector(".card-container").innerHTML = data.response
+        const cardContainer = document.querySelector(`.container.row`);
+
     });
 
+response.data.forEach((card) => {
+    const cardElement = document.createElement('div');
+    cardElement.className = 'col';
+
+    cardElement.innerHTML =
+})
