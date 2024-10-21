@@ -48,7 +48,7 @@ console.log(card);
 axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
     .then((response) => {
         console.log(response.data)
-        const cardContainer = document.querySelector(`.container.row.`);
+        const cardContainer = document.querySelector(`.container`);
 
 
     });
@@ -58,14 +58,17 @@ response.data.forEach((card) => {
     cardElement.className = 'col';
 
     cardElement.innerHTML = `  
-    <div class="card h-100 ">
-    <img src= "${card.url}"
-        class="card-img-top" alt="...">
-    <img class="${pin.svg}"
-    <div class="card-body">
-        <p class="${card.title}"
-    </div>
+    <div class="card h-100">
+        <img src="${card.url}" class="card-img-top" alt="${card.title}"> 
+        <img class="pallino" src="img/pin.svg" alt="">
+        <div class="card-body">
+            <p class="card-text">${card.title}</p>
+        </div>
+    </div>`;
 
     cardContainer.appendChild(cardElement);
-`});
+});
+
+
+
 console.log(data);
