@@ -4,6 +4,11 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
     .then((response) => {
         console.log(response.data)
         const cardContainer = document.querySelector(`.container`);
+    
+
+        const row = document.createElement('div');
+        row.className = 'row row-cols-1 row-cols-md-3 g-4';
+        cardContainer.appendChild(row);
 
         response.data.forEach((card) => {
             const cardElement = document.createElement('div');
@@ -23,10 +28,11 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
     });
 
 
-
-
-cardElement.addEventListener("click", function (e) {
-    const overlayImg = document.getElementById("overlay-img")
-
+cardElement.addEventListener("click", function () {
+    
 });
+
+
+
+
 
