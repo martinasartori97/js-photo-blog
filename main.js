@@ -69,6 +69,3 @@ response.data.forEach((card) => {
     cardContainer.appendChild(cardElement);
 });
 
-
-
-console.log(data);
