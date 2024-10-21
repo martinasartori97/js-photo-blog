@@ -86,4 +86,12 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
         console.log(response.data)
     });
 
+fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+        document.querySelector(`card`).innerHTML = data.response
+
+    })
+
 
