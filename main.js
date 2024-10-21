@@ -81,11 +81,9 @@ function generateMarkup(text, url) {
 console.log(card);
 
 //chiamata AJAX all’API di JSON Placeholder
-axios
-    .get("https://jsonplaceholder.typicode.com/photos?_limit=6")
+axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
     .then((response) => {
         console.log(response.data)
     });
 
 
-    
