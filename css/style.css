@@ -54,3 +54,12 @@ main {
     width: 30px;
     height: auto;
 }
+
+.global-overlay{
+display: none;
+
+}
+
+.close-overlay{
+
+}
