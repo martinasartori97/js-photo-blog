@@ -4,7 +4,7 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
     .then((response) => {
         console.log(response.data)
         const cardContainer = document.querySelector(`.container`);
-    
+
 
         const row = document.createElement('div');
         row.className = 'row row-cols-1 row-cols-md-3 g-4';
@@ -28,11 +28,8 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
     });
 
 
-cardElement.addEventListener("click", function () {
-    
-});
 
-
+document.querySelector('.row')
 
 
 
